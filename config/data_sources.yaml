@@ -1,0 +1,23 @@
+processing:
+  enable_validation: false
+  max_concurrent_downloads: 2
+sources:
+  icrisat:
+    api_base: http://data.icrisat.org
+    timeout: 300
+  imd:
+    base_url: https://imdpune.gov.in/cmpg/Griddata/Land
+    rate_limit_delay: 2.0
+    retry_attempts: 3
+    timeout: 300
+  satellite:
+    providers:
+    - MODIS_NASA
+    - ISRO_OCM
+    timeout: 300
+storage:
+  base_path: data
+  compression_enabled: true
+  enable_git_lfs: true
+  max_file_size_mb: 100
+  max_storage_gb: 10

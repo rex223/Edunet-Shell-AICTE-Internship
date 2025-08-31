@@ -1,2 +1,6 @@
 *.rbc
 *.fyc
+# environments
+.venv
+# data folder
+data/
